@@ -4,9 +4,6 @@ plugins {
     id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
-group 'com.example'
-version '1.0-SNAPSHOT'
-
 repositories {
     mavenCentral()
 }
@@ -21,8 +18,15 @@ test {
 }
 
 javafx {
-    modules = [ 'javafx.controls', 'javafx.fxml']
     version = '11.0.2'
+    modules = [ 'javafx.controls', 'javafx.fxml']
+
 }
 
+group 'com.example'
+version '1.0-SNAPSHOT'
+application{
+
+    mainClass = 'com.example.game.Main'
+}
 mainClassName = 'com.example.game.Main'
