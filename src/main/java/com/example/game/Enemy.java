@@ -1,5 +1,4 @@
 package com.example.game;
 
-public class Figure {
-
+public class Enemy {
 }
