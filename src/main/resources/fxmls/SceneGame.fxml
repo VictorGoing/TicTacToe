@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game.GameController">
@@ -137,5 +138,23 @@
             </ImageView>
          </children>
       </GridPane>
+      <Line fx:id="cros1" endX="250.79998779296875" endY="253.60000610351562" layoutX="171.0" layoutY="83.0" startX="-37.79997253417969" startY="15.999992370605469" stroke="#f2310b" strokeWidth="5.0" visible="false" />
+      <Line fx:id="cros2" endX="-29.4000244140625" endY="-19.600013732910156" layoutX="466.0" layoutY="125.0" startX="-336.60003662109375" startY="200.39999389648438" stroke="#f2310b" strokeWidth="5.0" visible="false" />
+      <Line fx:id="column1" endX="7.0" endY="21.399986267089844" layoutX="270.0" layoutY="74.0" startX="1.0" startY="255.00003051757812" stroke="#f2310b" strokeWidth="5.0" visible="false" />
+      <Line fx:id="column0" endX="-4.9999847412109375" endY="11.399986267089844" layoutX="178.0" layoutY="82.0" startX="-4.9999847412109375" startY="247.00003051757812" stroke="#f2310b" strokeWidth="5.0" visible="false" />
+      <Line fx:id="column2" endX="-3.4000244140625" endY="17.599998474121094" layoutX="380.0" layoutY="79.0" startX="-13.0" startY="253.60000610351562" stroke="#f2310b" strokeWidth="5.0" visible="false" />
+      <Line fx:id="row0" endX="344.0" layoutX="107.0" layoutY="148.0" startX="0.8000030517578125" stroke="#f2310b" strokeWidth="5.0" visible="false" />
+      <Line fx:id="row1" endX="318.0" endY="6.0" layoutX="118.0" layoutY="219.0" startX="-9.400009155273438" startY="-1.199981689453125" stroke="#f2310b" strokeWidth="5.0" visible="false" />
+      <Line fx:id="row2" endX="318.0" endY="3.0517578125E-5" layoutX="118.0" layoutY="291.0" startX="2.5999908447265625" startY="3.0517578125E-5" stroke="#f2310b" strokeWidth="5.0" visible="false" />
+      <Label fx:id="win" alignment="CENTER" layoutX="233.0" layoutY="74.0" prefHeight="25.0" prefWidth="166.0" text="You won!!!" textAlignment="CENTER" textFill="#0cdb01" visible="false">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lose" alignment="CENTER" layoutX="233.0" layoutY="69.0" prefHeight="44.0" prefWidth="166.0" text="You lost..." textFill="#f30909" visible="false">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
