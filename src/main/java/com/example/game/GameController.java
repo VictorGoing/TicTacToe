@@ -122,63 +122,63 @@ public class GameController extends Button  {
                 cross00.setVisible(true);
                 game.updateBoard(0,0,"x");
                 game.viewBoard();
-                checkWin(game.check());
+                if(!checkWin(game.check())) finalResult(false);
                 break;
             case 1:
                 button01.setVisible(false);
                 cross01.setVisible(true);
                 game.updateBoard(0,1,"x");
                 game.viewBoard();
-                checkWin(game.check());
+                if(!checkWin(game.check())) finalResult(false);
                 break;
             case 2:
                 button02.setVisible(false);
                 cross02.setVisible(true);
                 game.updateBoard(0,2,"x");
                 game.viewBoard();
-                checkWin(game.check());
+                if(!checkWin(game.check())) finalResult(false);
                 break;
             case 10:
                 button10.setVisible(false);
                 cross10.setVisible(true);
                 game.updateBoard(1,0,"x");
                 game.viewBoard();
-                checkWin(game.check());
+                if(!checkWin(game.check())) finalResult(false);
                 break;
             case 11:
                 button11.setVisible(false);
                 cross11.setVisible(true);
                 game.updateBoard(1,1,"x");
                 game.viewBoard();
-                checkWin(game.check());
+                if(!checkWin(game.check())) finalResult(false);
                 break;
             case 12:
                 button12.setVisible(false);
                 cross12.setVisible(true);
                 game.updateBoard(1,2,"x");
                 game.viewBoard();
-                checkWin(game.check());
+                if(!checkWin(game.check())) finalResult(false);
                 break;
             case 20:
                 button20.setVisible(false);
                 cross20.setVisible(true);
                 game.updateBoard(2,0,"x");
                 game.viewBoard();
-                checkWin(game.check());
+                if(!checkWin(game.check())) finalResult(false);
                 break;
             case 21:
                 button21.setVisible(false);
                 cross21.setVisible(true);
                 game.updateBoard(2,1,"x");
                 game.viewBoard();
-                checkWin(game.check());
+                if(!checkWin(game.check())) finalResult(false);
                 break;
             case 22:
                 button22.setVisible(false);
                 cross22.setVisible(true);
                 game.updateBoard(2,2,"x");
                 game.viewBoard();
-                checkWin(game.check());
+                if(!checkWin(game.check())) finalResult(false);
                 break;
         }
     }
@@ -240,6 +240,7 @@ public class GameController extends Button  {
         game.updateBoard(0,0,"o");
         game.viewBoard();
         if(checkWin(game.check())) this.enemyChoice(game.nextTurn(game.getBoard()));
+        else finalResult(true);
     }
     public void clickOnButton01(){
 
@@ -248,6 +249,7 @@ public class GameController extends Button  {
         game.updateBoard(0,1,"o");
         game.viewBoard();
         if(checkWin(game.check())) this.enemyChoice(game.nextTurn(game.getBoard()));
+        else finalResult(true);
     }
     public void clickOnButton02(){
 
@@ -256,6 +258,7 @@ public class GameController extends Button  {
         game.updateBoard(0,2,"o");
         game.viewBoard();
         if(checkWin(game.check())) this.enemyChoice(game.nextTurn(game.getBoard()));
+        else finalResult(true);
     }
     public void clickOnButton10(){
 
@@ -264,6 +267,7 @@ public class GameController extends Button  {
         game.updateBoard(1,0,"o");
         game.viewBoard();
         if(checkWin(game.check())) this.enemyChoice(game.nextTurn(game.getBoard()));
+        else finalResult(true);
     }
     public void clickOnButton11(){
 
@@ -272,6 +276,7 @@ public class GameController extends Button  {
         game.updateBoard(1,1,"o");
         game.viewBoard();
         if(checkWin(game.check())) this.enemyChoice(game.nextTurn(game.getBoard()));
+        else finalResult(true);
     }
     public void clickOnButton12(){
 
@@ -280,6 +285,7 @@ public class GameController extends Button  {
         game.updateBoard(1,2,"o");
         game.viewBoard();
         if(checkWin(game.check())) this.enemyChoice(game.nextTurn(game.getBoard()));
+        else finalResult(true);
     }
     public void clickOnButton20(){
 
@@ -288,6 +294,7 @@ public class GameController extends Button  {
         game.updateBoard(2,0,"o");
         game.viewBoard();
         if(checkWin(game.check())) this.enemyChoice(game.nextTurn(game.getBoard()));
+        else finalResult(true);
     }
     public void clickOnButton21(){
 
@@ -296,6 +303,7 @@ public class GameController extends Button  {
         game.updateBoard(2,1,"o");
         game.viewBoard();
         if(checkWin(game.check())) this.enemyChoice(game.nextTurn(game.getBoard()));
+        else finalResult(true);
     }
     public void clickOnButton22(){
 
@@ -304,6 +312,7 @@ public class GameController extends Button  {
         game.updateBoard(2,2,"o");
         game.viewBoard();
         if(checkWin(game.check())) this.enemyChoice(game.nextTurn(game.getBoard()));
+        else finalResult(true);
     }
     public void switchToMenu(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getClassLoader().getResource("fxmls/SceneMenu.fxml"));
