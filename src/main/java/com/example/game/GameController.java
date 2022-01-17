@@ -98,6 +98,8 @@ public class GameController extends Button  {
     private Label win;
     @FXML
     private Label lose;
+    @FXML
+    private Label draw;
 
     private Stage stage;
     private Scene scene;
@@ -180,6 +182,8 @@ public class GameController extends Button  {
                 game.viewBoard();
                 if(!checkWin(game.check())) finalResult(false);
                 break;
+            case 33:
+                draw.setVisible(true);
         }
     }
 
